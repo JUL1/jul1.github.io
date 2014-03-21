@@ -1,13 +1,10 @@
 body {
-	height:100%;
 
 
 		font-family:Arial, Helvetica, sans-serif;
 				letter-spacing:0.7px;
-	/*font-family:"Courier New", Courier, monospace;
-font-family:Arial, Helvetica, sans-serif;*/
+
 	font-weight:100;
-	min-width:1024px;
 	background:#222;
 	background: -moz-radial-gradient(center, ellipse cover,  #7d7e7d 0%, #0e0e0e 100%) ;
 	background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#7d7e7d), color-stop(100%,#0e0e0e));
