@@ -55,9 +55,12 @@ text-decoration:none;
 }
 
 #clock{
+  color: cyan;
   font-size:1.3em;
 }
-
+#downloadBtn{
+  font-size:1.5em;
+}
 html {
   overflow-y: scroll;
 }
@@ -200,11 +203,11 @@ text-align:left;
   /*box-shadow: 5px 5px 5px rgba(0,0,0,.5);*/
 }
   #playBtn {
-    margin-top:2.5em;
+    
   }
 
   #playBtn a{
-    font-size:7em;
+    font-size:9.5em;
 
   }
   #playBtn a:hover{
