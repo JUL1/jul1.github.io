@@ -8,8 +8,11 @@
   height: 100%;
   position:fixed;
   background-color: transparent;
+  /*
   background-image:  url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wQUBTgQCaQMJgAAABl0RVh0Q29tbWVudABDcmVhdGVkIHdpdGggR0lNUFeBDhcAAAAkSURBVAjXY2RgYKhnYGBgZGBg+A+lUQEjAwNDA5Lsf5hSOAAAoJAFAgd9HDQAAAAASUVORK5CYII=');
+  */
   background-repeat:repeat;
+
 }
 #BKG{
   width: 100%;
