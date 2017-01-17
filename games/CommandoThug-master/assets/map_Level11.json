@@ -1,0 +1,67 @@
+{ "height":7,
+ "layers":[
+        {
+         "data":[52, 17, 17, 17, 6, 17, 17, 17, 17, 17, 17, 8, 52, 17, 17, 17, 17, 17, 17, 17, 17, 17, 39, 39, 52, 17, 17, 17, 19, 19, 50, 28, 17, 39, 39, 39, 52, 8, 17, 17, 19, 19, 61, 63, 63, 39, 51, 97, 52, 52, 17, 19, 19, 19, 72, 74, 74, 51, 97, 97, 51, 52, 52, 19, 19, 19, 83, 85, 85, 97, 97, 97, 96, 96, 96, 96, 96, 55, 55, 55, 56, 57, 56, 57],
+         "height":7,
+         "name":"tile_Layer",
+         "opacity":1,
+         "type":"tilelayer",
+         "visible":true,
+         "width":12,
+         "x":0,
+         "y":0
+        }, 
+        {
+         "data":[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
+         "height":7,
+         "name":"solid_Layer",
+         "opacity":1,
+         "type":"tilelayer",
+         "visible":false,
+         "width":12,
+         "x":0,
+         "y":0
+        }],
+ "orientation":"orthogonal",
+ "properties":
+    {
+
+    },
+ "tileheight":64,
+ "tilesets":[
+        {
+         "firstgid":1,
+         "image":"img_solidTiles.png",
+         "imageheight":64,
+         "imagewidth":320,
+         "margin":0,
+         "name":"solid_LayerIMG",
+         "properties":
+            {
+
+            },
+         "spacing":0,
+         "tileheight":64,
+         "tilewidth":64,
+         "transparentcolor":"#ff00ff"
+        }, 
+        {
+         "firstgid":6,
+         "image":"img_TileSet1.png",
+         "imageheight":1408,
+         "imagewidth":704,
+         "margin":0,
+         "name":"tile_LayerIMG",
+         "properties":
+            {
+
+            },
+         "spacing":0,
+         "tileheight":64,
+         "tilewidth":64,
+         "transparentcolor":"#ff00ff"
+        }],
+ "tilewidth":64,
+ "version":1,
+ "width":12
+}
