@@ -18,10 +18,10 @@
 
 /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#113d61+0,030f15+86 */
 background: #113d61; /* Old browsers */
-background: -moz-radial-gradient(center, ellipse cover, #113d61 0%, #030f15 86%); /* FF3.6-15 */
-background: -webkit-radial-gradient(center, ellipse cover, #113d61 0%,#030f15 86%); /* Chrome10-25,Safari5.1-6 */
-background: radial-gradient(ellipse at center, #113d61 0%,#030f15 86%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#113d61', endColorstr='#030f15',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+background: -moz-linear-gradient(top, #113d61 0%, #030f15 86%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, #113d61 0%,#030f15 86%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, #113d61 0%,#030f15 86%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#113d61', endColorstr='#030f15',GradientType=0 ); /* IE6-9 */
   /*
   background: #001f28;
   background: -moz-radial-gradient(center, ellipse cover, #001f28 0%, black 100%);
