@@ -245,9 +245,7 @@ max-width:200px;
 }
 @media (min-width: 768px) {
 
-#playBtn {
-    margin-top:3em;
-}
+
 
 #GPLv3Logo img{
   max-width:1500px;
