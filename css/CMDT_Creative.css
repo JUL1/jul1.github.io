@@ -56,9 +56,15 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#041721', end
     border-top:none;
     box-shadow:none;
 }
+
+#clockAndBtn{
+margin-top:7.5%;
+}
+
+
 #homeHeading{
 
-  margin-top:-20%;
+  margin-top:0%;
 }
 
 #playBtn a{
