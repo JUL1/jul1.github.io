@@ -56,7 +56,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#041721', end
     border-top:none;
     box-shadow:none;
 }
+#homeHeading{
 
+  margin-top:-20%;
+}
 
 #playBtn a{
 font-size:10em;
@@ -245,9 +248,14 @@ max-width:200px;
 }
 @media (min-width: 768px) {
 
-#playBtn {
-    margin-top:15%;
+#clockAndBtn{
+margin-top:7.5%;
 }
+#homeHeading{
+
+  margin-top:15%;
+}
+
 #GPLv3Logo img{
   max-width:1500px;
 
