@@ -57,11 +57,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#041721', end
     box-shadow:none;
 }
 
-#playBtn {
-    margin-top:2em;
-}
+
 #playBtn a{
-font-size:11em;
+font-size:10em;
 text-decoration:none;  
 }
 
@@ -84,9 +82,7 @@ text-decoration:none;
   color: cyan;
   font-size:1.3em;
 }
-#downloadBtn{
-  font-size:1.5em;
-}
+
 html {
   overflow-y: scroll;
 }
@@ -222,15 +218,53 @@ border:none;
   text-decoration: underline;
   background-color:black;
 }
+
+#donate{
+word-break: break-all;
+
+}
+#GPLv3Logo img{
+max-width:200px;
+  -webkit-filter: drop-shadow(0px 0px 5px DodgerBlue);
+  filter: drop-shadow(0px 0px 5px DodgerBlue);
+}
+
+#GPLv3Logo{
+  -webkit-filter: drop-shadow(0px 0px 5px rgba(128,0,128,.3));
+  filter: drop-shadow(0px 0px 5px rgba(128,0,128,.3));
+}
+#GPLv3Logo:hover{
+  -webkit-filter: drop-shadow(0px 0px 1px rgba(0,256,256,.3));
+  filter: drop-shadow(0px 0px 1px rgba(0,256,256,.3));
+}
+
+#GPLv3Logo:active{
+  -webkit-filter: drop-shadow(0px 0px 6px DodgerBlue);
+  filter: drop-shadow(0px 0px 6px DodgerBlue);
+
+}
 @media (min-width: 768px) {
 
+#playBtn {
+    margin-top:15%;
+}
+#GPLv3Logo img{
+  max-width:1500px;
+
+}
+#downloadBtn{
+ 
+  font-size:1.4em;
+}
+#donate{
+word-break: normal;
+
+}
 .col-sm-12 {
 text-align:left;
   /*box-shadow: 5px 5px 5px rgba(0,0,0,.5);*/
 }
-  #playBtn {
-    
-  }
+
 
   #playBtn a{
     font-size:9.5em;
@@ -664,24 +698,6 @@ text-shadow: 0 0 4px DodgerBlue,0 0 2px purple,0 0 16px DodgerBlue;
 
   }
 
-#GPLv3Logo img{
-  -webkit-filter: drop-shadow(0px 0px 5px DodgerBlue);
-  filter: drop-shadow(0px 0px 5px DodgerBlue);
-}
-#GPLv3Logo{
-  -webkit-filter: drop-shadow(0px 0px 5px rgba(128,0,128,.3));
-  filter: drop-shadow(0px 0px 5px rgba(128,0,128,.3));
-}
-#GPLv3Logo:hover{
-  -webkit-filter: drop-shadow(0px 0px 1px rgba(0,256,256,.3));
-  filter: drop-shadow(0px 0px 1px rgba(0,256,256,.3));
-}
-
-#GPLv3Logo:active{
-  -webkit-filter: drop-shadow(0px 0px 6px DodgerBlue);
-  filter: drop-shadow(0px 0px 6px DodgerBlue);
-
-}
 /*
 ::-webkit-scrollbar { 
     display: none; 
@@ -767,3 +783,9 @@ width:64px;
 padding-top:10px;
 
 }
+
+#artworks{
+  padding-top:4em;
+}
+
+
