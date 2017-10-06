@@ -82,6 +82,10 @@ user-drag: none;
 
 @keyframes flicker{0%{background:cyan;box-shadow: 0 0 4px DodgerBlue,0 0 2px purple,0 0 16px DodgerBlue;} 60%{background:cyan;box-shadow: 0 0 4px DodgerBlue,0 0 2px purple,0 0 16px DodgerBlue;} 100%{background:transparent;}}
 
+@keyframes expand{100%{max-height: 512px;}}
+
+@keyframes collapse{100%{max-height: 0;}}
+
 #navBar{
 position:fixed;
 width:100%;
@@ -92,9 +96,7 @@ background:black;
 
 }
 
-#navBarInner{
 
-}
 
 #navBar{font-weight: bold;}
 
@@ -169,27 +171,25 @@ cursor: pointer; cursor: hand;
 	visibility:visible;
 	}
 
-	#navMenu{overflow:hidden;}
-
-	.collapse{
-    	max-height: 0;
-    	transition: max-height 0.35s ease-out;
-
+	#navMenu{
+	overflow:hidden;
 	}
-	.deploy{
-    	max-height: 500px;
-    	transition: max-height 0.35s ease-in;
-	}
+
+
+
 }
 
+	.collapse{max-height:512px;}
+	.expand{max-height:0;}
 
-#navBarBrand, .navMenuItem, #navToggler{
+#navBarBrand, .navMenuItem, #navToggler,#navMenu{
     
     animation-duration:.3s;
     animation-iteration-count:1;
     animation-timing-function:linear;
 
 }
+
 
 /*
 #navBarBrand:active, .navMenuItem:active, #navToggler:active{
