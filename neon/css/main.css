@@ -75,7 +75,6 @@ user-select: none;
 }
 */
 
-@-webkit-keyframes flicker{0%{background:cyan;box-shadow: 0 0 4px DodgerBlue,0 0 2px purple,0 0 16px DodgerBlue;} 60%{background:cyan;box-shadow: 0 0 4px DodgerBlue,0 0 2px purple,0 0 16px DodgerBlue;}100%{background:transparent;}}
 @keyframes flicker{0%{background:cyan;box-shadow: 0 0 4px DodgerBlue,0 0 2px purple,0 0 16px DodgerBlue;} 60%{background:cyan;box-shadow: 0 0 4px DodgerBlue,0 0 2px purple,0 0 16px DodgerBlue;} 100%{background:transparent;}}
 
 #navBar{
@@ -180,10 +179,11 @@ cursor: pointer; cursor: hand;
 
 
 #navBarBrand a, .navMenuItem a, #navToggler a{
+    
+    animation-duration:.3s;
+    animation-iteration-count:1;
+    animation-timing-function:linear;
 
-          -webkit-animation-duration: .3s;
-    -webkit-animation-iteration-count: 1;
-    -webkit-animation-timing-function: linear;
 }
 
 #navBarBrand a:active, .navMenuItem a:active, #navToggler a:active{
@@ -191,7 +191,8 @@ cursor: pointer; cursor: hand;
 	background:cyan;
 	box-shadow: 0 0 4px DodgerBlue,0 0 2px purple,0 0 16px DodgerBlue;
 	*/
-	  -webkit-animation-name: flicker;
+	  animation-name: flicker;
+
 }
 
 
