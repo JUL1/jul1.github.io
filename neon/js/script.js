@@ -1,6 +1,7 @@
 //document.getElementById("togglerBtn").addEventListener("click",toggleMenu);
 var navToggler=document.getElementById("navToggler");
 var navMenu=document.getElementById("navMenu");
+var navBarBrand=document.getElementById("navBarBrand");
 
 function touchCapabilities() {
  return (('ontouchstart' in window) || (navigator.MaxTouchPoints > 0) || (navigator.msMaxTouchPoints > 0));
@@ -8,9 +9,8 @@ function touchCapabilities() {
 
 
 function toggleMenu(e) {
+	
 
-    if (!e) e = window.event;
-    if (e.stopPropagation) {e.stopPropagation();}else {e.cancelBubble = true;}
 	
 	var visibility = window.getComputedStyle(navToggler, null).getPropertyValue("visibility");
 
@@ -22,7 +22,7 @@ function toggleMenu(e) {
 function resizeHandler() {
 
 var visibility = window.getComputedStyle(navToggler, null).getPropertyValue("visibility");
-
+	
 	if(visibility!=="visible" && navMenu.classList.contains("deploy")){
 		navMenu.classList.remove("deploy");navMenu.classList.add("collapse");
 	}
@@ -30,11 +30,40 @@ var visibility = window.getComputedStyle(navToggler, null).getPropertyValue("vis
 }
 
 
-navToggler.addEventListener("mousedown",toggleMenu,false);
-navMenu.addEventListener("mousedown",toggleMenu,false);
+
+function addAnimation(e){
+	//alert(e.target.getAttribute("target"));
+	    if (!e) e = window.event;
+    if (e.stopPropagation) {e.stopPropagation();}else {e.cancelBubble = true;}
+
+	e.target.style.animationName = 'flicker';
+}
 
 
+
+function setNavBarLinks(){
+
+var elems=navMenu.getElementsByTagName("span");
+
+	for(var i=0; i < elems.length; i++){
+
+		elems[i].addEventListener("mousedown",addAnimation,false);
+		elems[i].addEventListener('animationend', function(e){e.target.style.animationName = '';toggleMenu(e);window.open(e.target.getAttribute("target"),"_self");}, false);
+		//alert(elems[i].getAttribute("target"));
+	}
+
+navToggler.addEventListener("mousedown",addAnimation,false);
+navToggler.addEventListener('animationend', function(e){e.target.style.animationName = '';toggleMenu(e);}, false);
+}
+
+
+
+
+setNavBarLinks();
 
 window.addEventListener("resize", resizeHandler);
+
+
+
 
 //toggleMenu();

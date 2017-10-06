@@ -96,13 +96,13 @@ background:black;
 
 }
 
-#navBar a{text-decoration:none;font-weight: bold;}
+#navBar{font-weight: bold;}
 
-#navBarBrand, .navMenuItem{
+#navBarBrand, .navMenuItem, #navToggler{
 cursor: pointer; cursor: hand;
 }
 
-#navBarBrand a{
+#navBarBrand{
 	font-size: 20px;
 	border-radius:2px;
 	padding:8px;
@@ -113,7 +113,7 @@ cursor: pointer; cursor: hand;
 	top:50%;
 }
 
-.navMenuItem a{
+.navMenuItem{
 	font-size: 14px;
 	border-radius:2px;
 	padding:8px;
@@ -143,17 +143,17 @@ cursor: pointer; cursor: hand;
 }
 
 @media (max-width : 767px) {
-	.navMenuItem a{
+	.navMenuItem{
 	margin-left:0px;
  	align-items: center;
   	display: flex;
   	justify-content: center;
 	}
-	.navMenuItem a:hover{
+	.navMenuItem:hover{
 		background:rgba(30,144,255,.1);
 	}
 
-	#navToggler a{
+	#navToggler{
 		float:right;
 		font-size: 16px;
 		border-radius:2px;
@@ -183,7 +183,7 @@ cursor: pointer; cursor: hand;
 }
 
 
-#navBarBrand a, .navMenuItem a, #navToggler a{
+#navBarBrand, .navMenuItem, #navToggler{
     
     animation-duration:.3s;
     animation-iteration-count:1;
@@ -191,14 +191,15 @@ cursor: pointer; cursor: hand;
 
 }
 
-#navBarBrand a:active, .navMenuItem a:active, #navToggler a:active{
+/*
+#navBarBrand:active, .navMenuItem:active, #navToggler:active{
 	/*
 	background:cyan;
 	box-shadow: 0 0 4px DodgerBlue,0 0 2px purple,0 0 16px DodgerBlue;
-	*/
+	
 	  animation-name: flicker;
 
-}
+}*/
 
 
 
