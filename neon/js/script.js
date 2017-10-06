@@ -20,8 +20,8 @@ var visibility = window.getComputedStyle(navToggler, null).getPropertyValue("vis
 
 }
 
-navToggler.addEventListener("click",toggleMenu);
-navMenu.addEventListener("click",toggleMenu);
+navToggler.addEventListener("mousedown",toggleMenu);
+navMenu.addEventListener("mousedown",toggleMenu);
 window.addEventListener("resize", resizeHandler);
 
 //toggleMenu();
