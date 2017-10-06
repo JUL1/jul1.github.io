@@ -25,6 +25,17 @@ img::-moz-selection {
 ::-moz-selection { color:cyan;background: rgba(0,255,255,.1);text-shadow: 0 0 4px DodgerBlue,0 0 2px purple,0 0 16px DodgerBlue;}
 ::selection {color:cyan;background: rgba(0,255,255,.1);text-shadow: 0 0 4px DodgerBlue,0 0 2px purple,0 0 16px DodgerBlue;}
 
+input::-moz-focus-inner { 
+  border: 0; 
+}
+object, embed { 
+  outline: 0;
+}
+
+a, a:hover, a:active, a:focus {
+	outline: 0;
+}
+
 #navBar{
 -webkit-touch-callout: none;
 -webkit-user-select: none;
@@ -81,7 +92,7 @@ background:black;
 
 }
 
-#navBar a{text-decoration: none;font-weight: bold;}
+#navBar a{text-decoration:none;font-weight: bold;}
 
 #navBarBrand, .navMenuItem{
 cursor: pointer; cursor: hand;
@@ -167,7 +178,9 @@ cursor: pointer; cursor: hand;
 	}
 }
 
+
 #navBarBrand a, .navMenuItem a, #navToggler a{
+
           -webkit-animation-duration: .2s;
     -webkit-animation-iteration-count: 1;
     -webkit-animation-timing-function: linear;
