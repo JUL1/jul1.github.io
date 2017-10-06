@@ -63,6 +63,10 @@ user-select: none;
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#183c6a', endColorstr='#060a1c',GradientType=1 );
 }
 */
+
+@-webkit-keyframes flicker{0%{background:cyan;box-shadow: 0 0 4px DodgerBlue,0 0 2px purple,0 0 16px DodgerBlue;} 50%{background:cyan;box-shadow: 0 0 4px DodgerBlue,0 0 2px purple,0 0 16px DodgerBlue;}100%{background:transparent;}}
+@keyframes flicker{0%{background:cyan;box-shadow: 0 0 4px DodgerBlue,0 0 2px purple,0 0 16px DodgerBlue;} 50%{background:cyan;box-shadow: 0 0 4px DodgerBlue,0 0 2px purple,0 0 16px DodgerBlue;} 100%{background:transparent;}}
+
 #navBar{
 position:fixed;
 width:100%;
@@ -163,7 +167,19 @@ cursor: pointer; cursor: hand;
 	}
 }
 
-#navBarBrand a:active, .navMenuItem a:active, #navToggler a:active{
-	background:cyan;
-	 box-shadow: 0 0 4px DodgerBlue,0 0 2px purple,0 0 16px DodgerBlue;
+#navBarBrand a, .navMenuItem a, #navToggler a{
+          -webkit-animation-duration: .2s;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-timing-function: linear;
 }
+
+#navBarBrand a:active, .navMenuItem a:active, #navToggler a:active{
+	/*
+	background:cyan;
+	box-shadow: 0 0 4px DodgerBlue,0 0 2px purple,0 0 16px DodgerBlue;
+	*/
+	  -webkit-animation-name: flicker;
+}
+
+
+
