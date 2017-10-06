@@ -75,8 +75,8 @@ user-select: none;
 }
 */
 
-@-webkit-keyframes flicker{0%{background:cyan;box-shadow: 0 0 4px DodgerBlue,0 0 2px purple,0 0 16px DodgerBlue;} 50%{background:cyan;box-shadow: 0 0 4px DodgerBlue,0 0 2px purple,0 0 16px DodgerBlue;}100%{background:transparent;}}
-@keyframes flicker{0%{background:cyan;box-shadow: 0 0 4px DodgerBlue,0 0 2px purple,0 0 16px DodgerBlue;} 50%{background:cyan;box-shadow: 0 0 4px DodgerBlue,0 0 2px purple,0 0 16px DodgerBlue;} 100%{background:transparent;}}
+@-webkit-keyframes flicker{0%{background:cyan;box-shadow: 0 0 4px DodgerBlue,0 0 2px purple,0 0 16px DodgerBlue;} 90%{background:cyan;box-shadow: 0 0 4px DodgerBlue,0 0 2px purple,0 0 16px DodgerBlue;}100%{background:transparent;}}
+@keyframes flicker{0%{background:cyan;box-shadow: 0 0 4px DodgerBlue,0 0 2px purple,0 0 16px DodgerBlue;} 90%{background:cyan;box-shadow: 0 0 4px DodgerBlue,0 0 2px purple,0 0 16px DodgerBlue;} 100%{background:transparent;}}
 
 #navBar{
 position:fixed;
