@@ -36,7 +36,7 @@ a, a:hover, a:active, a:focus {
 	outline: 0;
 }
 
-#navBar{
+#navBar, a{
 -webkit-touch-callout: none;
 -webkit-user-select: none;
 -khtml-user-select: none;
