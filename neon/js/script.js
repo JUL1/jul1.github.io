@@ -7,7 +7,11 @@ function touchCapabilities() {
 }
 
 
-function toggleMenu() {
+function toggleMenu(e) {
+
+    if (!e) e = window.event;
+    if (e.stopPropagation) {e.stopPropagation();}else {e.cancelBubble = true;}
+
 var visibility = window.getComputedStyle(navToggler, null).getPropertyValue("visibility");
 
 	if(visibility==="visible"){
