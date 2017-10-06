@@ -4,7 +4,6 @@ var navMenu=document.getElementById("navMenu");
 
 function toggleMenu() {
 var visibility = window.getComputedStyle(navToggler, null).getPropertyValue("visibility");
-
 	if(visibility==="visible"){
 		if(navMenu.classList.contains("collapse")) {navMenu.classList.remove("collapse");navMenu.classList.add("deploy");}else{navMenu.classList.add("collapse");navMenu.classList.remove("deploy");};
 	}
