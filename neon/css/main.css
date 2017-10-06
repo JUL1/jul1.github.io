@@ -142,6 +142,8 @@ cursor: pointer; cursor: hand;
 	visibility:hidden;
 	}
 
+
+
 }
 
 @media (max-width : 767px) {
@@ -172,15 +174,9 @@ cursor: pointer; cursor: hand;
 	}
 
 	#navMenu{
-	overflow:hidden;
+		overflow:hidden;
 	}
-
-
-
 }
-
-	.collapse{max-height:512px;}
-	.expand{max-height:0;}
 
 #navBarBrand, .navMenuItem, #navToggler,#navMenu{
     
@@ -189,6 +185,9 @@ cursor: pointer; cursor: hand;
     animation-timing-function:linear;
 
 }
+
+
+
 
 
 /*
