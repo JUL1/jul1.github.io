@@ -2,6 +2,11 @@
 var navToggler=document.getElementById("navToggler");
 var navMenu=document.getElementById("navMenu");
 
+function touchCapabilities() {
+ return (('ontouchstart' in window) || (navigator.MaxTouchPoints > 0) || (navigator.msMaxTouchPoints > 0));
+}
+
+
 function toggleMenu() {
 var visibility = window.getComputedStyle(navToggler, null).getPropertyValue("visibility");
 
@@ -20,8 +25,15 @@ var visibility = window.getComputedStyle(navToggler, null).getPropertyValue("vis
 
 }
 
+if(touchCapabilities()){
+navToggler.addEventListener("touchstart",toggleMenu);
+navMenu.addEventListener("touchstart",toggleMenu);
+}else{
 navToggler.addEventListener("click",toggleMenu);
 navMenu.addEventListener("click",toggleMenu);
+}
+
+
 window.addEventListener("resize", resizeHandler);
 
 //toggleMenu();
