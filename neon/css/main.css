@@ -181,7 +181,7 @@ cursor: pointer; cursor: hand;
 
 #navBarBrand a, .navMenuItem a, #navToggler a{
 
-          -webkit-animation-duration: .2s;
+          -webkit-animation-duration: .3s;
     -webkit-animation-iteration-count: 1;
     -webkit-animation-timing-function: linear;
 }
