@@ -2,6 +2,7 @@
 var navToggler=document.getElementById("navToggler");
 var navMenu=document.getElementById("navMenu");
 var navBarBrand=document.getElementById("navBarBrand");
+var isMobile=touchCapabilities();
 
 function touchCapabilities() {
  return (('ontouchstart' in window) || (navigator.MaxTouchPoints > 0) || (navigator.msMaxTouchPoints > 0));
@@ -47,12 +48,12 @@ var elems=navMenu.getElementsByTagName("span");
 
 	for(var i=0; i < elems.length; i++){
 
-		elems[i].addEventListener("mousedown",addAnimation,false);
+		if(isMobile){elems[i].addEventListener("touchstart",addAnimation,false);}else{elems[i].addEventListener("mousedown",addAnimation,false);}
 		elems[i].addEventListener('animationend', function(e){e.target.style.animationName = '';toggleMenu(e);window.open(e.target.getAttribute("target"),"_self");}, false);
 		//alert(elems[i].getAttribute("target"));
 	}
 
-navToggler.addEventListener("mousedown",addAnimation,false);
+if(isMobile){navToggler.addEventListener("touchstart",addAnimation,false);}else{navToggler.addEventListener("mousedown",addAnimation,false);}
 navToggler.addEventListener('animationend', function(e){e.target.style.animationName = '';toggleMenu(e);}, false);
 }
 
