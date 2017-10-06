@@ -8,7 +8,7 @@ function touchCapabilities() {
 
 
 function toggleMenu(e) {
-	//e.preventDefault();
+	e.preventDefault();
     if (!e) e = window.event;
     if (e.stopPropagation) {e.stopPropagation();}else {e.cancelBubble = true;}
 	
