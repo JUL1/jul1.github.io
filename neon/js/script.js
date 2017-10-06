@@ -8,7 +8,7 @@ function touchCapabilities() {
 
 
 function toggleMenu(e) {
-	
+
     if (!e) e = window.event;
     if (e.stopPropagation) {e.stopPropagation();}else {e.cancelBubble = true;}
 	
@@ -29,13 +29,10 @@ var visibility = window.getComputedStyle(navToggler, null).getPropertyValue("vis
 
 }
 
-if(touchCapabilities()){
-navToggler.addEventListener("touchstart",toggleMenu,false);
-navMenu.addEventListener("touchstart",toggleMenu,false);
-}else{
-navToggler.addEventListener("click",toggleMenu,false);
-navMenu.addEventListener("click",toggleMenu,false);
-}
+
+navToggler.addEventListener("mousedown",toggleMenu,false);
+navMenu.addEventListener("mousedown",toggleMenu,false);
+
 
 
 window.addEventListener("resize", resizeHandler);
