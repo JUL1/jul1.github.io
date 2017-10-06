@@ -4,6 +4,7 @@ var navMenu=document.getElementById("navMenu");
 
 function toggleMenu() {
 var visibility = window.getComputedStyle(navToggler, null).getPropertyValue("visibility");
+
 	if(visibility==="visible"){
 		if(navMenu.classList.contains("collapse")) {navMenu.classList.remove("collapse");navMenu.classList.add("deploy");}else{navMenu.classList.add("collapse");navMenu.classList.remove("deploy");};
 	}
@@ -19,8 +20,8 @@ var visibility = window.getComputedStyle(navToggler, null).getPropertyValue("vis
 
 }
 
-navToggler.addEventListener("touchstart",toggleMenu);
-navMenu.addEventListener("touchstart",toggleMenu);
+navToggler.addEventListener("click",toggleMenu);
+navMenu.addEventListener("click",toggleMenu);
 window.addEventListener("resize", resizeHandler);
 
 //toggleMenu();
