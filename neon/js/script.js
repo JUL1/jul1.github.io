@@ -26,11 +26,11 @@ var visibility = window.getComputedStyle(navToggler, null).getPropertyValue("vis
 }
 
 if(touchCapabilities()){
-navToggler.addEventListener("touchstart",toggleMenu);
-navMenu.addEventListener("touchstart",toggleMenu);
+navToggler.addEventListener("touchstart",toggleMenu,false);
+navMenu.addEventListener("touchstart",toggleMenu,false);
 }else{
-navToggler.addEventListener("click",toggleMenu);
-navMenu.addEventListener("click",toggleMenu);
+navToggler.addEventListener("click",toggleMenu,false);
+navMenu.addEventListener("click",toggleMenu,false);
 }
 
 
