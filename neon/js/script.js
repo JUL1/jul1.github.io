@@ -11,8 +11,8 @@ function toggleMenu(e) {
 
     if (!e) e = window.event;
     if (e.stopPropagation) {e.stopPropagation();}else {e.cancelBubble = true;}
-
-var visibility = window.getComputedStyle(navToggler, null).getPropertyValue("visibility");
+	
+	var visibility = window.getComputedStyle(navToggler, null).getPropertyValue("visibility");
 
 	if(visibility==="visible"){
 		if(navMenu.classList.contains("collapse")) {navMenu.classList.remove("collapse");navMenu.classList.add("deploy");}else{navMenu.classList.add("collapse");navMenu.classList.remove("deploy");};
