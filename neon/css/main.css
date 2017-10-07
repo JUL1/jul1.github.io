@@ -40,6 +40,11 @@ a, a:hover, a:active, a:focus {
 	outline: 0;
 }
 
+h1{
+font-size:8vw;
+}
+
+/**/
 
 #scanlines{
   	width: 100%;
