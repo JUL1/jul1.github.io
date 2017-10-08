@@ -242,12 +242,13 @@ user-drag: none;
 
 /*CONTENT*/
 #playBtn{
-	display: block;
-	margin-top:240px;
+	
 	color: cyan;
-	font-size:480px;
-	line-height:0px;
+	font-size:60vh;
+	line-height:65vh;
+	font-family: courier;
 	text-decoration:none;
+
    -webkit-transition: opacity 0.35s, text-shadow 0.35s;
   -moz-transition: opacity 0.35s, text-shadow 0.35s;
   transition: opacity 0.35s, text-shadow 0.35s;
@@ -267,7 +268,7 @@ user-drag: none;
 #clock{
   	color: cyan;
   	font-size:3.5vh;
-  	margin-top:260px;
+  	padding:2%;
    	text-transform: uppercase;
 }
 /*END OF CONTENT*/
