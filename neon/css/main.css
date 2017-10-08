@@ -244,9 +244,8 @@ user-drag: none;
 #playBtn{
 	
 	color: cyan;
-	font-size:60vh;
+	font-size:480px;
 	text-decoration:none;
-
    -webkit-transition: opacity 0.35s, text-shadow 0.35s;
   -moz-transition: opacity 0.35s, text-shadow 0.35s;
   transition: opacity 0.35s, text-shadow 0.35s;
@@ -269,24 +268,6 @@ user-drag: none;
   	padding:2%;
    	text-transform: uppercase;
 }
-
-
-#playBtnContainer{
-	z-index:2000;
-	position:fixed;
-	top:0;
-	left:0;
-	width:100%;
-	height:100%;
-	background:rgba(0,0,0,.9);
-	
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	font-weight: bold;
-
-}
-
 /*END OF CONTENT*/
 
 /*GALLERY*/
