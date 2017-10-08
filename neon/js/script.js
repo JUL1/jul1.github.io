@@ -87,16 +87,15 @@ resizeHandler();
 setNavBarLinks();
 //END OF NAVBAR
 
-//CLOCK
+//ON LOAD
 function clock(){document.getElementById('clock').textContent=new Date();}
 
-window.onload = function(){
+window.addEventListener("load",function() {
 
-
-if(document.getElementById('clock')){ clock(); setInterval( function(){ clock(); }, 1000);};
-
-};
-//END OF CLOCK
+	setTimeout(function(){window.scrollTo(0, 1);}, 0);
+	if(document.getElementById('clock')){ clock(); setInterval( function(){ clock(); }, 1000);};
+});
+//END OF ON LOAD
 
 
 
