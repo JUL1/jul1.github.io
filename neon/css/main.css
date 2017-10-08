@@ -151,7 +151,7 @@ user-drag: none;
 
 
 
-@media (min-width : 768px) {
+@media  all and (min-width : 768px) {
 	
 	#navMenu{
 	right:8px;
@@ -173,7 +173,7 @@ user-drag: none;
 
 }
 
-@media (max-width : 767px) {
+@media  all and (max-width : 767px) {
 	.navMenuItem{
 	margin-left:0px;
  	align-items: center;
