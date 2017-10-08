@@ -242,9 +242,11 @@ user-drag: none;
 
 /*CONTENT*/
 #playBtn{
-	
+	margin-top:240px;
+	height:240px;
 	color: cyan;
 	font-size:480px;
+	line-height:0px;
 	text-decoration:none;
    -webkit-transition: opacity 0.35s, text-shadow 0.35s;
   -moz-transition: opacity 0.35s, text-shadow 0.35s;
