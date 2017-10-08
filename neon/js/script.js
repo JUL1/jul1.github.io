@@ -9,10 +9,10 @@ function touchCapabilities() {return (('ontouchstart' in window) || (navigator.M
 function stopPropagation(e){if (!e) e = window.event;if (e.stopPropagation) {e.stopPropagation();}else {e.cancelBubble = true;}}
 
 function toggleMenu(e,forceClose,url) {
-	
+if(navToggler){	
 	var visibility = window.getComputedStyle(navToggler, null).getPropertyValue("visibility");
 	var style = window.getComputedStyle(navMenu, null).getPropertyValue("max-Height");
-
+}
 
 	if(url){goTo=url}else{goTo='';}
 
@@ -35,6 +35,7 @@ function GOTO(){if(goTo!==''){window.open(goTo,"_self");goTo='';};}
 
 function resizeHandler() {
 
+if(navToggler){
 var visibility = window.getComputedStyle(navToggler, null).getPropertyValue("visibility");
 	
 	var style = window.getComputedStyle(navMenu, null).getPropertyValue("max-height");
@@ -42,11 +43,13 @@ var visibility = window.getComputedStyle(navToggler, null).getPropertyValue("vis
 	if(visibility!=="visible" && style==="0px"){
 		navMenu.style.maxHeight="512px";
 	}else if(visibility==="visible"){navMenu.style.maxHeight="0px";};
+}
 
 }
 
 function setNavBarLinks(){
 
+if(navToggler){
 var elems=navMenu.getElementsByTagName("span");
 
 	for(var i=0; i < elems.length; i++){
@@ -54,10 +57,6 @@ var elems=navMenu.getElementsByTagName("span");
 		if(isMobile){elems[i].addEventListener("touchstart",addNavButtonAnimation,false);}else{elems[i].addEventListener("mousedown",addNavButtonAnimation,false);}
 					 elems[i].addEventListener('animationend', function(e){e.target.style.animationName = '';toggleMenu(e,false,e.target.getAttribute("target"));}, false);
 	}
-
-if(isMobile){navBarBrand.addEventListener("touchstart",addNavButtonAnimation,false);}else{navBarBrand.addEventListener("mousedown",addNavButtonAnimation,false);}
-		     navBarBrand.addEventListener('animationend', function(e){e.target.style.animationName = '';toggleMenu(e,true,e.target.getAttribute("target"));}, false);
-	
 
 	if(isMobile){navToggler.addEventListener("touchstart",toggle,false);}else{navToggler.addEventListener("mousedown",toggle,false);}
 				 navToggler.addEventListener('animationend', function(e){e.target.style.animationName = '';}, false);
@@ -70,6 +69,14 @@ if(isMobile){navBarBrand.addEventListener("touchstart",addNavButtonAnimation,fal
 				 	e.target.style.animationName = '';
 
 				 }, false);
+
+
+}
+
+if(isMobile){navBarBrand.addEventListener("touchstart",addNavButtonAnimation,false);}else{navBarBrand.addEventListener("mousedown",addNavButtonAnimation,false);}
+		     navBarBrand.addEventListener('animationend', function(e){e.target.style.animationName = '';toggleMenu(e,true,e.target.getAttribute("target"));}, false);
+	
+
 
 
 	window.addEventListener("resize", resizeHandler);
@@ -239,4 +246,4 @@ function openViewer(e){
 }
 
 
-setUpGallery();
+if(gallery){setUpGallery();};
