@@ -254,10 +254,6 @@ user-drag: none;
 
 }
 
-#playBtn:before{
-	content: '▶';
-}
-
 #playBtn:hover {
 	text-shadow: 0 0 8px DodgerBlue,0 0 4px purple,0 0 24px DodgerBlue;
 }
