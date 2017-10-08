@@ -223,7 +223,7 @@ user-drag: none;
 	margin-left:8%;
 	margin-right:8%;
 	top:40px;
-	min-height:100vh;
+	min-height:80vh;
 	text-align:center;
 }
 /*END OF CONTAINER*/
@@ -244,9 +244,9 @@ user-drag: none;
 #playBtn{
 	
 	color: cyan;
-	font-size:60vh;
+	font-size:80vh;
 	line-height:65vh;
-	font-family: courier;
+	font-family:'Courier New',Courier,monospace!important;
 	text-decoration:none;
 
    -webkit-transition: opacity 0.35s, text-shadow 0.35s;
