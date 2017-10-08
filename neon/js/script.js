@@ -87,6 +87,21 @@ resizeHandler();
 setNavBarLinks();
 //END OF NAVBAR
 
+//CLOCK
+function clock(){document.getElementById('clock').textContent=new Date();}
+
+window.onload = function(){
+
+
+if(document.getElementById('clock')){ clock(); setInterval( function(){ clock(); }, 1000);};
+
+};
+//END OF CLOCK
+
+
+
+
+//GALLERY
 var gallery=document.getElementById("gallery");
 var viewer = undefined;
 var viewerImg = undefined;
@@ -202,12 +217,14 @@ else if(galleryIndex>=galleryLength){galleryIndex=0;}
 currentTarget=galleryElements[galleryIndex];
 updateInfos();
 }
+
 function updateInfos(){
 	var infos=currentTarget.nextElementSibling;
 	imgTitle.textContent=infos.getAttribute("title");
 	imgLabel.textContent=infos.getAttribute("label");
 	imgCounter.textContent=(parseInt(currentTarget.getAttribute("index"))+1)+'/'+galleryLength;
 }
+
 function closeViewer(){
 	viewer.style.animationName ='fadeOut';
 }
@@ -247,3 +264,4 @@ function openViewer(e){
 
 
 if(gallery){setUpGallery();};
+//END OF CALLERY
