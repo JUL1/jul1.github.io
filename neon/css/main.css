@@ -248,6 +248,10 @@ user-drag: none;
     	margin:16px;
 }
 
+#viewerImg{
+max-width:100%;
+
+}
 
 .noScale img{
 
