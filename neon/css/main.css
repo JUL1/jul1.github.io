@@ -171,7 +171,6 @@ user-drag: none;
   	box-shadow: 10px 10px 5px rgba(0,0,0,.5);
 	}
 
-
 }
 
 @media (max-width : 767px) {
@@ -209,7 +208,7 @@ user-drag: none;
 	width:100%;
   	box-shadow: 10px 10px 5px rgba(0,0,0,.5);
 	}
-
+}
 
 
 /*END OF NAVBAR*/
@@ -242,10 +241,12 @@ user-drag: none;
 /*END OF FOOTER*/
 
 /*CONTENT*/
+
 #playBtn{
+	
 	color: cyan;
-			font-size:60vh;
-  		line-height:60vh;
+	font-size:60vh; 
+  	line-height:65vh;
 	text-decoration:none;
    -webkit-transition: opacity 0.35s, text-shadow 0.35s;
   -moz-transition: opacity 0.35s, text-shadow 0.35s;
