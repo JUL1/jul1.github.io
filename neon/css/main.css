@@ -254,7 +254,7 @@ user-drag: none;
 
 }
 
-#playBtn:after{
+#playBtn:before{
 	content: '▶';
 }
 
