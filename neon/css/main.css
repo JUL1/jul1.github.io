@@ -245,6 +245,8 @@ user-drag: none;
 	min-height:64px;
 	background:black;
 	bottom:0px;
+	-webkit-transform: none !important;
+	transform: none !important;
 }
 /*END OF FOOTER*/
 
