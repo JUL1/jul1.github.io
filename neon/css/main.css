@@ -240,7 +240,7 @@ user-drag: none;
 
 #footer{
 	z-index:20;
-	position:fixed!important;
+	position:fixed;
 	width:100%;
 	min-height:64px;
 	background:black;
@@ -251,8 +251,8 @@ user-drag: none;
 
 /*CONTENT*/
 #playBtn i{
-	font-size:60vh;
-	line-height:65vh;
+	font-size: calc(10vw + 40vh);
+	line-height:calc(15vw + 40vh);
 	color: cyan;
 	text-decoration:none;
    -webkit-transition: opacity 0.35s, text-shadow 0.35s;
