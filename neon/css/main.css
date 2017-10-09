@@ -260,23 +260,13 @@ bottom:0px;
 #playBtn i{
 
 	font-size:60vmin;
-	line-height:65vmin;
+	line-height:68vmin;
 	color: cyan;
 	text-decoration:none;
    -webkit-transition: opacity 0.35s, text-shadow 0.35s;
   -moz-transition: opacity 0.35s, text-shadow 0.35s;
   transition: opacity 0.35s, text-shadow 0.35s;
 }
-
-@media  all and (max-height : 400px) {
-
-	#playBtn i{
-		font-size:35vmin;
-		line-height:35vmin;
-	}
-}
-
-
 
 #playBtn i:hover {
 	text-shadow: 0 0 8px DodgerBlue,0 0 4px purple,0 0 24px DodgerBlue;
