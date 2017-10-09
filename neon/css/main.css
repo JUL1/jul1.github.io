@@ -262,11 +262,15 @@ user-drag: none;
 
 }*/
 
-#playBtn{
+#playBtn i{
 
-	max-width:200px;
-  -webkit-filter: drop-shadow(0px 0px 5px DodgerBlue);
-  filter: drop-shadow(0px 0px 5px DodgerBlue);
+	font-size:60vmin;
+	line-height:65vmin;
+	color: cyan;
+	text-decoration:none;
+   -webkit-transition: opacity 0.35s, text-shadow 0.35s;
+  -moz-transition: opacity 0.35s, text-shadow 0.35s;
+  transition: opacity 0.35s, text-shadow 0.35s;
 }
 
 #playBtn i:hover {
