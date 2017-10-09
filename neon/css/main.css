@@ -246,7 +246,7 @@ user-drag: none;
 	color: cyan;
 	font-size:80vh;
 	line-height:65vh;
-	font-family:'Courier New',Courier,monospace!important;
+	font-family: "Times New Roman", Times, serif!important;
 	text-decoration:none;
 
    -webkit-transition: opacity 0.35s, text-shadow 0.35s;
