@@ -250,15 +250,24 @@ user-drag: none;
 /*END OF FOOTER*/
 
 /*CONTENT*/
+
+/*
 #playBtn i{
-	font-size: calc(10vw + 40vh);
-	line-height:calc(15vw + 40vh);
+	font-size: calc(20vw + 15vh);
+	line-height:calc(25vw + 20vh);
 	color: cyan;
 	text-decoration:none;
    -webkit-transition: opacity 0.35s, text-shadow 0.35s;
   -moz-transition: opacity 0.35s, text-shadow 0.35s;
   transition: opacity 0.35s, text-shadow 0.35s;
 
+}*/
+
+#playBtn{
+
+	max-width:200px;
+  -webkit-filter: drop-shadow(0px 0px 5px DodgerBlue);
+  filter: drop-shadow(0px 0px 5px DodgerBlue);
 }
 
 #playBtn i:hover {
