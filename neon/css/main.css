@@ -258,7 +258,6 @@ bottom:0px;
 /*CONTENT*/
 
 #playBtn i{
-
 	font-size:60vmin;
 	line-height:68vmin;
 	color: cyan;
@@ -267,6 +266,14 @@ bottom:0px;
   -moz-transition: opacity 0.35s, text-shadow 0.35s;
   transition: opacity 0.35s, text-shadow 0.35s;
 }
+
+@media all and (min-height: 0px)  	{  #playBtn i  { font-size:10vmin;line-height:18vmin; }}
+@media all and (min-height: 200px)  	{  #playBtn i  { font-size:20vmin;line-height:28vmin; }}
+@media all and (min-height: 250px)  	{  #playBtn i  { font-size:30vmin;line-height:38vmin; }}
+@media all and (min-height: 300px)  	{  #playBtn i  { font-size:30vmin;line-height:38vmin; }}
+@media all and (min-height: 350px)  	{  #playBtn i  { font-size:40vmin;line-height:48vmin; }}
+@media all and (min-height: 450px)  	{  #playBtn i  { font-size:50vmin;line-height:58vmin; }}
+@media all and (min-height: 500px)  	{  #playBtn i  { font-size:60vmin;line-height:68vmin; }}
 
 #playBtn i:hover {
 	text-shadow: 0 0 8px DodgerBlue,0 0 4px purple,0 0 24px DodgerBlue;
@@ -277,15 +284,7 @@ bottom:0px;
 
 }
 
-@media screen and (orientation: landscape) {
-#playBtn i{
 
-	font-size:40vmin;
-	line-height:48vmin;
-}
-
-
-}
 
 #clock{
   	color: cyan;
