@@ -250,18 +250,6 @@ user-drag: none;
 
 /*CONTENT*/
 
-/*
-#playBtn i{
-	font-size: calc(20vw + 15vh);
-	line-height:calc(25vw + 20vh);
-	color: cyan;
-	text-decoration:none;
-   -webkit-transition: opacity 0.35s, text-shadow 0.35s;
-  -moz-transition: opacity 0.35s, text-shadow 0.35s;
-  transition: opacity 0.35s, text-shadow 0.35s;
-
-}*/
-
 #playBtn i{
 
 	font-size:60vmin;
@@ -272,6 +260,16 @@ user-drag: none;
   -moz-transition: opacity 0.35s, text-shadow 0.35s;
   transition: opacity 0.35s, text-shadow 0.35s;
 }
+
+@media  all and (max-height : 500px) {
+
+#playBtn i{
+	font-size:45vmin;
+	line-height:50vmin;
+}
+}
+
+
 
 #playBtn i:hover {
 	text-shadow: 0 0 8px DodgerBlue,0 0 4px purple,0 0 24px DodgerBlue;
