@@ -272,7 +272,8 @@ bottom:0px;
 }
 
 #playBtn i{
-	font-size:60vmin;
+	margin-top:-15vmin;
+	font-size:50vmin;
 	color: cyan;
 	text-decoration:none;
    -webkit-transition: opacity 0.35s, text-shadow 0.35s;
