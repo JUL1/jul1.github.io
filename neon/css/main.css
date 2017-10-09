@@ -1,7 +1,5 @@
 /*By JR 2017*/
-
 @import url('https://fonts.googleapis.com/css?family=Orbitron:70');
-
 html,body{border:0;margin:0;}
 body{font-family: 'Orbitron', sans-serif;text-shadow: 0 0 4px DodgerBlue,0 0 2px purple,0 0 16px DodgerBlue;background:black;}
 html {overflow-y: scroll;-ms-touch-action: manipulation;touch-action: manipulation;}
@@ -93,7 +91,7 @@ font-size:8vw;
 
 }
 
-#navBarBrand, .navMenuItem, #navToggler, .imgContainer, #nextBtn, #prevBtn, #viewerImg, #closeBtn, #playBtn a{
+#navBarBrand, .navMenuItem, #navToggler, .imgContainer, #nextBtn, #prevBtn, #viewerImg, #closeBtn, #playBtn i{
 cursor: pointer; cursor: hand;
 }
 
@@ -252,11 +250,10 @@ user-drag: none;
 /*END OF FOOTER*/
 
 /*CONTENT*/
-#playBtn a{
+#playBtn i{
 	font-size:60vh;
 	line-height:65vh;
 	color: cyan;
-	font-family: "Times New Roman", Times, serif!important;
 	text-decoration:none;
 
    -webkit-transition: opacity 0.35s, text-shadow 0.35s;
@@ -265,11 +262,11 @@ user-drag: none;
 
 }
 
-#playBtn a:hover {
+#playBtn i:hover {
 	text-shadow: 0 0 8px DodgerBlue,0 0 4px purple,0 0 24px DodgerBlue;
 }
 
-#playBtn a:active {
+#playBtn i:active {
   	opacity:.9;
 
 }
