@@ -233,18 +233,6 @@ bottom:0px;
 }
 /*END OF CONTAINER*/
 
-
-/*FOOTER*/
-/*
-#footer{
-	position:relative;
-	width:100%;
-	min-height:100px;
-	background:black;
-	bottom:-40px;
-
-}*/
-
 #footer{
 	z-index:20;
 	position:fixed;
@@ -252,6 +240,47 @@ bottom:0px;
 	min-height:64px;
 	background:black;
 	bottom:0px;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#widgets{
+	position:fixed;
+	right:16px;
+}
+
+#artwork{
+	position:fixed;
+	left:16px;
+}
+
+#options{
+	position:fixed;
+	right:16px;
+}
+
+#links{
+	position:fixed;
+	right:16px;
+}
+
+#fullscreen{
+	position:fixed;
+	right:16px;
+-webkit-transform: rotate(90deg);	
+-moz-transform: rotate(90deg);
+-ms-transform: rotate(90deg);
+-o-transform: rotate(90deg);
+transform: rotate(90deg);
+}
+
+#settings, #pageUp, #fullscreen, #artwork, #links{
+font-size:40px;
+padding:8px;
+opacity:1;
+
 }
 /*END OF FOOTER*/
 
