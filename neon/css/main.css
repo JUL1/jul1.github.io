@@ -277,6 +277,15 @@ bottom:0px;
 
 }
 
+@media screen and (orientation: landscape) {
+#playBtn i{
+
+	font-size:40vmin;
+	line-height:48vmin;
+}
+
+
+}
 
 #clock{
   	color: cyan;
