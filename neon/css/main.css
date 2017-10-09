@@ -213,14 +213,21 @@ user-drag: none;
 
 
 /*MAIN CONTAINER*/
+#backFrame{
+position:fixed;
+background:rgba(0,255,255,.02);
+top:0px;
+left:8%;
+right:8%;
+bottom:0px;
+}
+
 #mainContainer{
 	position:relative;
 	z-index:0;
-	background:rgba(0,255,255,.02);
 	padding:20px;
 	margin-left:8%;
 	margin-right:8%;
-	padding-bottom:54px;
 	top:40px;
 	text-align:center;
 }
@@ -290,6 +297,9 @@ user-drag: none;
 /*END OF CONTENT*/
 
 /*GALLERY*/
+#gallery{
+	padding-bottom:calc(8% + 37px);
+}
 .imgContainer {
     position: relative;
 	 display: inline-block;
