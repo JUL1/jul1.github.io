@@ -240,7 +240,7 @@ user-drag: none;
 
 #footer{
 	z-index:20;
-	position:fixed;
+	position:fixed!important;
 	width:100%;
 	min-height:64px;
 	background:black;
