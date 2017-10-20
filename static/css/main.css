@@ -1,0 +1,496 @@
+/*By JR 2017*/
+@import url('https://fonts.googleapis.com/css?family=Orbitron:70');
+
+@font-face {
+      font-family: 'customicons';
+      src: url('/font/customicons.svg?22385647#customicons') format('svg');
+    }
+
+html,body{border:0;margin:0;background:black;}
+
+body,button{font-family: 'Orbitron', sans-serif;
+-webkit-font-smoothing: 
+antialiased;-moz-osx-font-smoothing: grayscale;
+}
+
+*{color:black;}
+
+html 
+{
+	/*overflow-y: scroll;*/
+	-ms-touch-action: manipulation;
+	touch-action: manipulation;
+}
+
+
+input::-moz-focus-inner { 
+  border: 0; 
+}
+object, embed { 
+  outline: 0;
+}
+
+a, a:hover, a:active, a:focus {
+	outline: 0;
+	font-weight:700;
+}
+
+
+#scanlines{
+
+  	width: 100%;
+  	height: 100%;
+  	position:fixed;
+  	background-image:  url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wQUBTgQCaQMJgAAABl0RVh0Q29tbWVudABDcmVhdGVkIHdpdGggR0lNUFeBDhcAAAAkSURBVAjXY2RgYKhnYGBgZGBg+A+lUQEjAwNDA5Lsf5hSOAAAoJAFAgd9HDQAAAAASUVORK5CYII=');
+  	background-color: transparent;
+  	background-repeat:repeat;
+
+}
+
+
+#BKG{
+  	width: 100%;
+  	height: 100%;
+  	position:fixed;
+}
+
+#backFrame{
+	position:fixed;
+	left:8%;
+	right:8%;
+	top:0px;
+	bottom:0px;
+}
+
+
+@keyframes expand{0%{max-height: 0px;} 100%{max-height: 512px;}}
+
+@keyframes collapse{0%{max-height: 512px;} 100%{max-height: 0px;}}
+
+@keyframes fadeIn{0%{opacity:0} 100%{opacity:1;}}
+
+@keyframes fadeOut{0%{opacity:1} 100%{opacity:0;}}
+
+@keyframes fadeInImg{0%{opacity:0} 100%{opacity:1;}}
+
+@keyframes fadeOutImg{0%{opacity:1} 100%{opacity:0;}}
+
+#navBarBrand, .navMenuItem, #navToggler, #navMenu, #nextBtn, #prevBtn, #viewerImg, #viewer, #options{
+    
+    animation-duration:.3s;
+    animation-iteration-count:1;
+    animation-timing-function:linear;
+
+}
+
+#navBarBrand, .navMenuItem, #navToggler, .imgContainer, #nextBtn, #prevBtn, #viewerImg, #closeBtn, #playBtn i, #options{
+cursor: pointer; cursor: hand;
+}
+
+/*NAVBAR*/
+#navBar{
+position:fixed;
+width:100%;
+padding-top:6px;
+padding-bottom:8px;
+z-index:1;
+}
+
+#navBar, a, #gallery, #viewer,img, #playBtn, #clock, br, .noSelect, #options {
+-webkit-touch-callout: none;
+-webkit-user-select: none;
+-khtml-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+user-select: none;
+-webkit-user-drag: none;
+-khtml-user-drag: none;
+-moz-user-drag: none;
+-o-user-drag: none;
+user-drag: none;
+}
+
+.select{
+-webkit-touch-callout: auto;
+-webkit-user-select: auto;
+-khtml-user-select: auto;
+-moz-user-select: auto;
+-ms-user-select: auto;
+user-select: auto;
+}
+
+#navBar, #options{font-weight: 700;}
+
+
+
+#navBarBrand{
+	font-size: 20px;
+	border-radius:2px;
+	padding:8px;
+	padding-top:6px;
+	padding-bottom:1px;
+	margin-left:8px;
+	display:inline-block;
+	top:50%;
+}
+
+.navMenuItem, #options{
+	font-size: 14px;
+	border-radius:2px;
+	padding:8px;
+	padding-top:6px;
+	padding-bottom:2px;
+	margin-left:8px;
+}
+
+
+
+
+
+@media  all and (min-width : 768px) {
+h1{
+	font-size:4em;
+}
+
+
+	#navMenu{
+	right:8px;
+	position:absolute;
+	top:50%;
+	-ms-transform:  translateX(0%) translateY(-50%);
+	-webkit-transform: translate(0%,-50%);
+	transform: translate(0%,-50%);
+	}
+
+	#navToggler{
+	visibility:hidden;
+	}
+
+	.imgContainer img{
+	width:256px;
+  	box-shadow: 10px 10px 5px rgba(0,0,0,.5);
+	}
+
+	.links{
+	display: inline-block;
+	text-align:left;
+	padding-left:1em;
+	padding-right:1em;
+
+	}
+
+}
+
+@media  all and (max-width : 767px) {
+h1{
+	font-size:8vw;
+}
+
+	.navMenuItem{
+	margin-left:0px;
+ 	align-items: center;
+  	display: flex;
+  	justify-content: center;
+	}
+
+	#navToggler{
+		float:right;
+		font-size: 16px;
+		border-radius:2px;
+		padding:8px;
+		padding-top:6px;
+		padding-bottom:1px;
+		margin-right:8px;
+		display:inline-block;
+		top:50%;
+	}
+
+	#navToggler{
+	visibility:visible;
+	}
+
+	#navMenu{
+		overflow:hidden;
+	}
+
+	.imgContainer img{
+	width:100%;
+  	box-shadow: 10px 10px 5px rgba(0,0,0,.5);
+	}
+}
+/*END OF NAVBAR*/
+
+
+/*MAIN CONTAINER*/
+#mainContainer{
+	position:relative;
+	z-index:0;
+	padding:20px;
+	margin-left:8%;
+	margin-right:8%;
+	margin-bottom:2em;
+	top:37px;
+	text-align:center;
+	min-height:calc(100vh - 3em - 37px - 2em - 3px);
+}
+/*END OF CONTAINER*/
+
+
+/*FOOTER*/
+
+#footer{
+	position:relative;
+	width:100%;
+	min-height:3em;
+	display: flex;
+	align-items: center;
+}
+
+#options{
+margin-left: auto;
+margin-right:16px;
+}
+
+/*END OF FOOTER*/
+
+@media all and (min-height: 0px)  		{  #playBtn i  { font-size:10vmin;line-height:18vmin; }}
+@media all and (min-height: 200px)  	{  #playBtn i  { font-size:20vmin;line-height:28vmin; }}
+@media all and (min-height: 250px)  	{  #playBtn i  { font-size:30vmin;line-height:38vmin; }}
+@media all and (min-height: 300px)  	{  #playBtn i  { font-size:40vmin;line-height:48vmin; }}
+@media all and (min-height: 350px)  	{  #playBtn i  { font-size:50vmin;line-height:58vmin; }}
+@media all and (min-height: 450px)  	{  #playBtn i  { font-size:60vmin;line-height:68vmin; }}
+
+
+/*CONTENT*/
+
+#playBtn i{
+	font-size:60vmin;
+	line-height:65vmin;
+	text-decoration:none;
+   -webkit-transition: opacity 0.35s, text-shadow 0.35s;
+  -moz-transition: opacity 0.35s, text-shadow 0.35s;
+  transition: opacity 0.35s, text-shadow 0.35s;
+}
+
+#playBtn i:active {
+  	opacity:.9;
+
+}
+
+#clock{
+  	font-size:3.5vh;
+  	padding:2%;
+   	text-transform: uppercase;
+}
+
+
+
+.links a{
+	text-decoration:none;
+	line-height:1.2em;
+
+}
+
+.inlinePanel{
+max-width:200px;
+padding:8px;
+margin:8px;
+border-style:solid;
+border-radius:8px;
+display:inline-block;
+}
+
+
+
+#mobileIcon,#keyboardIcon,#pointerIcon,#keyboardIcon2,#pointerIcon2{
+font-size:4em;
+margin-top:.2em;
+}
+
+#bitcoinIcon,#mailIcon,#downloadIcon{
+font-size:4em;
+margin-top:.2em;
+}
+
+#licenseLogo{
+  	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#licenseLogo svg{
+  transform:scale(.45);
+  -webkit-transform:scale(.45);
+  margin-bottom:-6em;
+  margin-top:-7.5em;
+}
+
+
+
+#downloadBtns:active > #downloadBtn{
+
+opacity:.5;
+
+}
+
+#downloadBtn{
+  font-size:1.4em;
+  white-space: nowrap;
+     -webkit-transition: all 0.15s;
+  -moz-transition: all 0.15s;
+  transition: all 0.15s;
+}
+
+
+#download{
+text-decoration:none;
+font-size:3em;
+  margin-bottom:-12px;
+  margin-right:4px;
+}
+
+ #donate{
+ 	word-wrap:break-word;
+    font-weight: bold;
+ }
+
+ #contactMail{
+  padding-left:3em;
+ }
+
+
+
+ #contactMail{
+  font-weight: bold;
+  margin-top: 22px;
+   	padding-left:3em;
+ 	padding-right:3em;
+ }
+
+ .inlineBlock{
+	max-width:100%;
+
+ 	text-align:center;
+    display:inline-block;
+ }
+
+ #at::after {
+    content: attr(data-domain);
+
+
+  }
+ #at::before {
+    content: attr(data-user) "\0040";
+
+  }
+
+/*END OF CONTENT*/
+
+/*GALLERY*/
+.imgContainer {
+    position: relative;
+	 display: inline-block;
+    	margin:16px;
+}
+
+#viewerImg{
+max-width:100%;
+
+}
+
+.noScale img{
+
+  width:100%;
+  
+}
+.imgOverlay:before {
+    content: attr(title) "\a" "\a" attr(label);
+    white-space: pre-line;
+}
+
+.imgOverlay {
+	pointer-events: none;
+    opacity:0;
+    position: absolute;
+    bottom: 4px;
+    top:0px;
+    left:0px;
+    width:100%;
+
+  	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-weight: 700;
+
+   	-webkit-transition: opacity 0.35s;
+  	-moz-transition: opacity 0.35s;
+  	transition: opacity 0.35s;
+}
+
+.imgContainer img:hover + .imgOverlay{
+	opacity:1;
+}
+
+#viewer{
+	z-index:1000;
+	position:fixed;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	background:rgba(0,0,0,.9);
+	
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-weight: 700;
+
+	visibility:hidden;
+}
+
+#nextBtn, #prevBtn{
+position:fixed;
+font-size:54px;
+text-shadow:none;
+}
+
+#nextBtn{
+right:4%;
+}
+#prevBtn{
+left:4%;
+}
+#nextBtn:after{
+content: '▶';
+}
+
+#prevBtn:after{
+content: '◀';
+}
+
+#imgCounter{
+position:fixed;
+top:4%;
+left:4%;
+}
+
+#imgTitle{
+position:fixed;
+top:4%;
+}
+
+#imgLabel{
+position:fixed;
+bottom:4%;
+}
+
+#closeBtn{
+position:fixed;
+top:4%;
+right:4%;
+}
+
+#closeBtn:after{
+content: 'X';
+}
+/*END OF GALLERY*/
