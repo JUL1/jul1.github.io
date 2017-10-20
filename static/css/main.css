@@ -75,13 +75,12 @@ a, a:hover, a:active, a:focus {
 
 @keyframes fadeOutImg{0%{opacity:1} 100%{opacity:0;}}
 
-#navBarBrand, .navMenuItem, #navToggler, #navMenu, #nextBtn, #prevBtn, #viewerImg, #viewer, #options{
-    
+#navBarBrand, .navMenuItem, #navToggler,#navMenu,#nextBtn, #prevBtn, #viewerImg, #viewer, #options{
     animation-duration:.3s;
     animation-iteration-count:1;
     animation-timing-function:linear;
-
 }
+
 
 #navBarBrand, .navMenuItem, #navToggler, .imgContainer, #nextBtn, #prevBtn, #viewerImg, #closeBtn, #playBtn i, #options{
 cursor: pointer; cursor: hand;
@@ -179,6 +178,28 @@ h1{
 
 	}
 
+
+#licenseLogo svg{
+  transform:scale(.45);
+  -webkit-transform:scale(.45);
+	overflow:hidden;
+}
+
+#downloadBtn{
+  font-size:1.4em;
+  white-space: nowrap;
+     -webkit-transition: all 0.15s;
+  -moz-transition: all 0.15s;
+  transition: all 0.15s;
+}
+
+
+#download{
+text-decoration:none;
+font-size:2.9em;
+margin-right:4px;
+}
+
 }
 
 @media  all and (max-width : 767px) {
@@ -217,6 +238,30 @@ h1{
 	width:100%;
   	box-shadow: 10px 10px 5px rgba(0,0,0,.5);
 	}
+
+#licenseLogo svg{
+    margin-top:-1em;
+  transform:scale(.34);
+  -webkit-transform:scale(.34);
+	overflow:hidden;
+}
+
+#downloadBtn{
+  font-size:1.3em;
+
+     -webkit-transition: all 0.15s;
+  -moz-transition: all 0.15s;
+  transition: all 0.15s;
+}
+
+
+#download{
+ margin-top:-2em;
+text-decoration:none;
+font-size:2.4em;
+margin-right:4px;
+}
+
 }
 /*END OF NAVBAR*/
 
@@ -317,16 +362,12 @@ margin-top:.2em;
 	justify-content: center;
 	align-items: center;
 	margin:auto;
-	width:350px;
+	width:100%;
 	height:180px;
 	overflow:hidden;
 }
 
-#licenseLogo svg{
-  transform:scale(.45);
-  -webkit-transform:scale(.45);
-	overflow:hidden;
-}
+
 
 
 
@@ -336,21 +377,7 @@ opacity:.5;
 
 }
 
-#downloadBtn{
-  font-size:1.4em;
-  white-space: nowrap;
-     -webkit-transition: all 0.15s;
-  -moz-transition: all 0.15s;
-  transition: all 0.15s;
-}
 
-
-#download{
-text-decoration:none;
-font-size:3em;
-  margin-bottom:-12px;
-  margin-right:4px;
-}
 
  #donate{
  	word-wrap:break-word;
