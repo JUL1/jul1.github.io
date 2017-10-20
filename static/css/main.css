@@ -316,13 +316,16 @@ margin-top:.2em;
   	display: flex;
 	justify-content: center;
 	align-items: center;
+	margin:auto;
+	width:350px;
+	height:180px;
+	overflow:hidden;
 }
 
 #licenseLogo svg{
   transform:scale(.45);
   -webkit-transform:scale(.45);
-  margin-bottom:-6em;
-  margin-top:-7.5em;
+	overflow:hidden;
 }
 
 
