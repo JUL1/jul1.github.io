@@ -13,7 +13,13 @@ body,button{font-family: 'Orbitron', sans-serif;
 antialiased;-moz-osx-font-smoothing: grayscale;
 }
 
-*{color:black;}
+*{color:black;
+
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important; 
+    -webkit-focus-ring-color: rgba(255, 255, 255, 0) !important; 
+    outline: none !important;
+
+}
 
 html 
 {
