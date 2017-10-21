@@ -3,29 +3,29 @@ body,button{
 text-shadow: 0 0 4px red,0 0 2px orange,0 0 16px red;background:black;
 }
 
-*{color:#FFA900;}
+*{color:#fcce02;}
 
 ::-moz-selection {
-  color: #FFA900;
+  color: #fcce02;
   text-shadow: none;
   background: transparent;
 }
 ::selection {
-  color: #FFA900;
+  color: #fcce02;
   text-shadow: none;
   background: transparent;
 }
 img::selection {
-  color: #FFA900;
+  color: #fcce02;
   background: transparent;
 }
 img::-moz-selection {
-  color: #FFA900;
+  color: #fcce02;
   background: transparent;
 }
 
-::-moz-selection { color:#FFA900;background: rgba(255,169,0,.1);text-shadow: 0 0 4px red,0 0 2px orange,0 0 16px red;}
-::selection {color:#FFA900;background: rgba(255,169,0,.1);text-shadow: 0 0 4px red,0 0 2px orange,0 0 16px red;}
+::-moz-selection { color:#fcce02;background: rgba(255,169,0,.1);text-shadow: 0 0 4px red,0 0 2px orange,0 0 16px red;}
+::selection {color:#fcce02;background: rgba(255,169,0,.1);text-shadow: 0 0 4px red,0 0 2px orange,0 0 16px red;}
 
 #scanlines{
 
@@ -46,9 +46,9 @@ img::-moz-selection {
 }
 
 
-@keyframes flicker{0%{background:#FFA900;box-shadow: 0 0 4px red,0 0 2px orange,0 0 16px red;} 60%{background:#FFA900;box-shadow: 0 0 4px red,0 0 2px orange,0 0 16px red;} 100%{background:transparent;}}
+@keyframes flicker{0%{background:#fcce02;box-shadow: 0 0 4px red,0 0 2px orange,0 0 16px red;} 60%{background:#fcce02;box-shadow: 0 0 4px red,0 0 2px orange,0 0 16px red;} 100%{background:transparent;}}
 
-@keyframes fadeBtn{0%{color:#FFA900;text-shadow: 0 0 4px red,0 0 2px orange,0 0 16px red;} 100%{color:rgba(255,255,255,.5);text-shadow:none;}}
+@keyframes fadeBtn{0%{color:#fcce02;text-shadow: 0 0 4px red,0 0 2px orange,0 0 16px red;} 100%{color:rgba(255,255,255,.5);text-shadow:none;}}
 
 
 /*NAVBAR*/
@@ -75,7 +75,7 @@ background:black;
 
 /*CONTENT*/
 #playBtn i{
-	color: #FFA900;
+	color: #fcce02;
 }
 
 #playBtn i:hover {
@@ -83,7 +83,7 @@ background:black;
 }
 
 #clock{
-  	color: #FFA900;
+  	color: #fcce02;
 }
 
 .inlinePanel{
@@ -98,8 +98,8 @@ border-color:rgba(255,169,0,.1);
 }
 
 #licenseLogo path {
-    fill: #FFA900;
-    stroke:#FFA900;
+    fill: #fcce02;
+    stroke:#fcce02;
 }​
 /*END OF CONTENT*/
 
