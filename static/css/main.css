@@ -326,6 +326,13 @@ font-size:2.9em;
 margin-right:4px;
 }
 
+
+ #contactMail{
+   	padding-left:3em;
+ 	padding-right:3em;
+ }
+
+
 }
 
 @media  all and (max-width : 767px) {
@@ -510,17 +517,11 @@ opacity:.5;
     font-weight: bold;
  }
 
- #contactMail{
-  padding-left:3em;
- }
-
 
 
  #contactMail{
   font-weight: bold;
   margin-top: 22px;
-   	padding-left:3em;
- 	padding-right:3em;
  }
 
  .inlineBlock{
