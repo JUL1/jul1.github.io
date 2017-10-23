@@ -481,11 +481,15 @@ display:inline-block;
 
 
 
-#mobileIcon,#keyboardIcon,#pointerIcon,#keyboardIcon2,#pointerIcon2{
+
+#mobileIcon,#keyboardIcon,#pointerIcon,#pointerKeyboard {
 font-size:4em;
 margin-top:.2em;
 }
 
+#pointerKeyboard{
+	margin-left:-.5em;
+}
 #bitcoinIcon,#mailIcon,#downloadIcon{
 font-size:4em;
 margin-top:.2em;
