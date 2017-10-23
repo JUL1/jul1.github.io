@@ -1,10 +1,126 @@
 /*By JR 2017*/
 @import url('https://fonts.googleapis.com/css?family=Orbitron:70');
 
-@font-face {
-      font-family: 'customicons';
-      src: url('/font/customicons.svg?22385647#customicons') format('svg');
+@font-face {font-family: 'customicons'; src: url('../font/customicons.ttf') format('truetype');}
+    .icon
+    {
+      font-family: "customicons";
+      font-style: normal;
+      font-weight: normal;
+      speak: none;
+      display: inline-block;
+      text-decoration: inherit;
+      width: 1em;
+      margin-right: .2em;
+      text-align: center;
+      font-variant: normal;
+      text-transform: none;
+      line-height: 1em;
+      margin-left: .2em;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+
     }
+
+
+
+
+
+
+
+@media  all and (min-width : 768px) {
+
+	.product{
+    	margin:auto;
+ 		display: flex;
+ 		margin-bottom:1em;
+ 		font-size:1.2vw;
+ 		margin-left:2em;
+ 		margin-right:2em;
+	}
+
+	.productTitle{
+		display:none;
+	}
+
+	.productPreview img{
+		width:100%;
+    	margin:auto;
+		border-top-left-radius:8px;
+		border-bottom-left-radius:8px;
+	}
+
+	.productPreview{
+
+		border-top-left-radius:8px;
+		border-bottom-left-radius:8px;
+ 		align-items: center;
+  		display: flex;
+  		justify-content: center;
+  		width:inherit;
+		border-width:2px;
+		border-style:solid;
+		margin:.1em;
+		width:28vw;
+	}
+	.productInfos{
+		width:100%;
+		border-top-right-radius:8px;
+		border-bottom-right-radius:8px;
+		border-width:2px;
+		border-style:solid;
+		text-align:left;
+		margin:.1em;
+		padding:.5em;
+	}
+	.productInfos span{
+		font-weight:700;
+	}
+
+	.productInfos a{
+		font-weight:700;
+		text-decoration:none;
+		font-size:1em;
+		float:right;
+		margin-right:.3em;
+	}
+
+
+}
+
+@media  all and (max-width : 767px) {
+
+	.product{
+		margin-bottom:3em;
+		margin-left:2em;
+ 		margin-right:2em;
+	}
+	.productTitle{
+		font-size:4.5vw;
+		font-weight:700;
+		margin-top:.9em;
+		margin-bottom:.25em;
+		line-height:0px;
+	}
+
+	.productPreview img{
+		width:100%;
+		border-top-width:2px;
+		border-top-style:solid;
+		margin-bottom:-4px;
+		border-bottom-left-radius:6px;
+		border-bottom-right-radius:6px;
+	}
+	.productPreview{
+		border-width:2px;
+		border-style:solid;
+		border-radius:6px;
+
+	}
+	.productInfos{
+		display:none;
+	}
+}
 
 html,body{border:0;margin:0;background:black;}
 
@@ -40,6 +156,7 @@ a, a:hover, a:active, a:focus {
 	outline: 0;
 	font-weight:700;
 }
+
 
 
 #scanlines{
