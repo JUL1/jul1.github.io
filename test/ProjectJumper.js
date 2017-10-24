@@ -68,7 +68,7 @@ ApplicationMain.init = function() {
 	}
 };
 ApplicationMain.main = function() {
-	ApplicationMain.config = { build : "10", company : "HaxeFlixel", file : "ProjectJumper", fps : 60, name : "ProjectJumper", orientation : "", packageName : "com.example.myapp", version : "0.0.1", windows : [{ antialiasing : 0, background : 0, borderless : false, depthBuffer : false, display : 0, fullscreen : false, hardware : false, height : 0, parameters : "{}", resizable : true, stencilBuffer : true, title : "ProjectJumper", vsync : true, width : 0, x : null, y : null}]};
+	ApplicationMain.config = { build : "11", company : "HaxeFlixel", file : "ProjectJumper", fps : 60, name : "ProjectJumper", orientation : "", packageName : "com.example.myapp", version : "0.0.1", windows : [{ antialiasing : 0, background : 0, borderless : false, depthBuffer : false, display : 0, fullscreen : false, hardware : false, height : 0, parameters : "{}", resizable : true, stencilBuffer : true, title : "ProjectJumper", vsync : true, width : 0, x : null, y : null}]};
 };
 ApplicationMain.start = function() {
 	var hasMain = false;
@@ -3926,9 +3926,11 @@ Preloader.__name__ = ["Preloader"];
 Preloader.__super__ = flixel_system_FlxBasePreloader;
 Preloader.prototype = $extend(flixel_system_FlxBasePreloader.prototype,{
 	fontSize: null
+	,soundEffect: null
 	,logo: null
 	,text: null
 	,create: function() {
+		this.soundEffect = flixel_FlxG.sound.load("assets/music/013_Smoke-Spec.Ops.ogg");
 		this._width = openfl_Lib.current.stage.stageWidth;
 		this._height = openfl_Lib.current.stage.stageHeight;
 		openfl_text_Font.registerFont(CustomFont);
